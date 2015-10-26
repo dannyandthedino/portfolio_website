@@ -1,0 +1,562 @@
+/*
+Theme Name: Portfolio
+Theme URI: dannypmyers.com
+Description: Theme for my portfolio 
+Version: 1.0
+Author: Danny Myers
+Author URI: http://dannypmyers.com
+*/
+
+
+/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {	margin: 0;	padding: 0; border: 0;	font-size: 100%;	font: inherit;	vertical-align: baseline;}/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {	display: block;}body {	line-height: 1;}ol, ul {	list-style: none;}blockquote, q {	quotes: none;}blockquote:before, blockquote:after,q:before, q:after {	content: '';	content: none;}table {	border-collapse: collapse;	border-spacing: 0;}
+
+	html {
+		position: relative;
+		min-height: 100%;
+		}
+
+	body {
+		margin: 0 0 100px;
+		height: 100%;
+		background-color: #fff;
+		}
+
+	hr {
+		color: #FFF;
+		}
+
+	.body {
+		padding:10px;
+		padding-bottom: 60px;
+		}
+
+	.header {
+		margin: 0 auto;
+		}
+
+	.container {
+		min-height: 100%;
+		position: relative;
+		margin: 0 auto;
+		}
+		
+	.content ul{
+		list-style:none;
+		padding-top: 50px;
+		width: 696px;
+		height: 500px;
+		margin: 0 auto;
+		align: center;
+		}
+
+	.content li{
+		float: right;
+		margin: 0px;
+		padding: 2.5px;
+		}
+
+	.header {
+		text-align: center;
+		color: #FFF;
+		font-size: .8em;
+		} 
+
+	.logo{
+		text-align: center;
+		padding-top: 100px;
+		padding-bottom: 50px;
+		margin: 0 auto;
+		}
+	
+	.logo a{
+		color: #000;
+		font-size: 960%;
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-weight: 700;
+		text-decoration: none;
+		} 
+
+	.clearing{
+		clear: both;
+		width: 1280px;
+		height: 40px;
+		}
+
+	.img-circular{
+		width: 200px;
+		height: 200px;
+		background-size: cover;
+		display: block;
+		align: right;
+		}
+	
+	.thumbnails ul li {
+		display: inline-block;
+		width: 200px;
+		height: 200px;
+		margin: .3em;
+		}
+ 
+	p {
+		text-align: left;
+		color: #000;
+		font-size: .8em;
+		font-family: 'Montserrat', sans-serif;
+		font weight: 400;	
+		line-height: 150%;
+		padding-left: 20px;
+		padding-right: 20px;
+		}
+	
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
+	
+	#cssmenu {
+		background: #000;
+		width: 100%;
+		}
+
+	#cssmenu ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		line-height: 1;
+		display: block;
+		zoom: 1;
+		}
+
+	#cssmenu ul:after {
+		content: " ";
+		display: block;
+		font-size: 0;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+		}
+
+	#cssmenu ul li {
+		display: inline-block;
+		padding: 0;
+		margin: 0;
+		}
+	
+	#cssmenu.align-right ul li {
+		float: right;
+		}
+
+	#cssmenu.align-center ul {
+		text-align: center;
+		}
+
+	#cssmenu ul li a {
+		color: #ffffff;
+		text-decoration: none;
+		display: block;
+		padding: 15px 25px;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 700;
+		text-transform: uppercase;
+		font-size: 14px;
+		position: relative;
+		-webkit-transition: color .25s;
+		-moz-transition: color .25s;
+		-ms-transition: color .25s;
+		-o-transition: color .25s;
+		transition: color .25s;
+		}
+
+	#cssmenu ul li a:hover {
+		color: #f96e5b;
+		}
+
+	#cssmenu ul li a:hover:before {
+		width: 100%;
+		}
+
+	#cssmenu ul li a:after {
+		content: "";
+		display: block;
+		position: absolute;
+		right: -3px;
+		top: 19px;
+		height: 6px;
+		width: 6px;
+		background: #ffffff;
+		opacity: .5;
+		}
+
+	#cssmenu ul li a:before {
+		content: "";
+		display: block;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		height: 3px;
+		width: 0;
+		background: #333333;
+		-webkit-transition: width .25s;
+		-moz-transition: width .25s;
+		-ms-transition: width .25s;
+		-o-transition: width .25s;
+		transition: width .25s;
+		}
+	  
+	#cssmenu ul li.last > a:after,
+	#cssmenu ul li:last-child > a:after {
+		display: none;
+		}
+
+	#cssmenu ul li.active a {
+		color: #333333;
+		}
+
+	#cssmenu ul li.active a:before {
+		width: 100%;
+		}
+
+	#cssmenu.align-right li.last > a:after,
+	#cssmenu.align-right li:last-child > a:after {
+		display: block;
+		}
+
+	#cssmenu.align-right li:first-child a:after {
+		display: none;
+		}
+
+	.content {
+		padding-top: 50px;
+		padding-bottom: 60px;
+		width: 696px;
+		height: 100%;
+		margin: 0 auto;
+		}
+	
+	.content_image{
+		padding-top: 50px;
+		width: 200px;	
+		height: 200px;
+		align: center;
+		list-style: inline;
+		position: relative;
+		}
+
+	.content_single_image{
+		width: 200px;	
+		height: 200px;
+		align: center;
+		float: right;
+		padding: 10px;
+		}
+	
+	.content_about{
+		padding-top: 50px;
+		width: 30%;
+		height: 500px;
+		margin: 0 auto;
+		}
+	
+	.content_portfolio{
+		padding-top: 50px;
+		height: 100%;
+		width: 1000px;
+		margin: 0 auto;
+		}
+
+	.content_portfolio img {
+		display: inline-block;
+		margin-right: auto;
+		margin-left: auto;
+		}
+
+	.content_single{
+		padding-top: 50px;
+		margin: 0 auto;
+		background-color: #E90D10;
+		width: 875px;
+		height: 100px;
+		align: center;
+		position:relative;
+		}
+	
+	.magic_fields{
+		align: center;
+		margin: 5px;
+		display: block;
+		 }
+
+
+/*----------------------------------------------------------------------------------------------*/
+/*--Start of the Blog--*/
+/*----------------------------------------------------------------------------------------------*/
+
+	.content_blog {
+		padding-top: 50px;
+		width: 696px;
+		height: 100%;
+		margin: 0 auto;
+		}
+
+	.entry-title {
+		font-family: 'Open Sans Condensed', sans-serif;
+		text-transform: uppercase;
+		font-size: 20px;
+		margin-bottom: 20px;
+		}
+		
+	.entry-title a {
+		text-decoration: none;
+		color: #000;
+		}
+
+	.post_date {
+		font-size: 12px;
+		text-transform: uppercase;
+		padding-bottom: 5px;
+		font-weight: bold;
+		}
+
+	h6.read-more {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		width: 696px;
+		height: 100%;
+		margin: 0 auto;
+		}
+
+	h6 a {
+		text-decoration: none;
+		color: #f96e5b;
+		}
+
+
+	.back {
+		padding-top: 50px;
+		}
+
+	.content_blog h1 {
+		font-size: 250%;
+		color: #f96e5b;
+		weight: bold;
+		}
+
+/*----------------------------------------------------------------------------------------------*/
+/*--Start of the Footer--*/
+/*----------------------------------------------------------------------------------------------*/
+	
+
+	.footer {
+	  	width: 100%;
+	  	text-align: center;
+	  	height: 60px;  /* Height of the footer */
+	  	font-family: 'Montserrat', sans-serif;
+	  	font-weight: 400;
+	  	font-size: .9em;
+	  	color: #000000;
+	  	position: absolute;
+	  	bottom: 0;
+	  	padding-bottom: 10px;
+		}
+	  
+	.footer a {
+	  	text-decoration: none;
+	  	color: #000;
+	  	}
+	  
+	.footer p {
+	  	margin:0 auto;
+	  	padding:10px;
+	  	text-align: center;
+	  	}		
+	  
+	
+/*----------------------------------------------------------------------------------------------*/
+/*--MEDIA QUERIES--*/
+/*----------------------------------------------------------------------------------------------*/
+	
+	
+@media screen and (max-width: 375px) {
+	
+	.logo a { 
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		}
+	
+	#cssmenu ul li {
+		float: none;
+		display: block;
+		}
+		
+	.magic_fields{
+		display: block;
+		align: center;
+		margin: 7px;
+		width: 300px;
+		height: auto;
+		}
+
+	.content_about{
+		padding-top: 50px;
+		width: 95%;
+		height: 500px;
+		margin: 0 auto;
+		}
+
+	.content_portfolio{
+		padding-top: 50px;
+		height: 100%;
+		width: 40%;
+		margin: 0 auto;
+		padding-right: 260px;
+		}
+
+	.content_portfolio img {
+		display: inline-block;
+		margin-right: auto;
+		margin-left: auto;
+		height: 375px;
+		width: 375px;
+		}	
+	
+	}
+
+@media screen and (max-width: 768px) {
+	
+	html {
+   		position: relative;
+    	min-height: 100%;
+		}
+
+	.content_about{
+		padding-left: 10px;
+		padding-right: 10px;
+		}
+	
+	.content_blog{
+		padding-left: 10px;
+		padding-right: 10px;
+		}
+	
+	.content_portfolio{
+		padding-top: 50px;
+		height: 100%;
+		width: 70%;
+		margin: 0 auto;
+		}
+	
+	.content_portfolio img {
+		display: inline-block;
+		margin-right: auto;
+		margin-left: auto;
+		padding-right: 10px;
+		}
+	
+	.logo a { 
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		}
+
+  	#cssmenu ul li {
+    	float: none;
+    	display: block;
+  		}
+		
+  	#cssmenu ul li a {
+		width: 100%;
+    	-moz-box-sizing: border-box;
+    	-webkit-box-sizing: border-box;
+    	box-sizing: border-box;
+    	border-bottom: 1px solid #fb998c;
+		text-align: center;
+  		}
+	
+  	#cssmenu ul li.last > a,
+  	#cssmenu ul li:last-child > a {
+    	border: 0;
+ 	 	}
+	 
+  	#cssmenu ul li a:after {
+    	display: none;
+ 	 	}
+	 
+ 	 #cssmenu ul li a:before {
+    	display: none;
+  		}
+  
+  	.content_about{
+		padding-top: 50px;
+		width: 95%;
+		height: 500px;
+		margin: 0 auto;
+		}
+
+  
+  	.magic_fields{
+		display: block;
+		align: center;
+		margin: 7px;
+		width:200px;
+		height: 200px;
+		}
+}
+
+@media screen and (max-width: 1024px) {
+  	
+	.content_about{
+		padding-top: 50px;
+		width: 95%;
+		height: 500px;
+		margin: 0 auto;
+		}
+		
+	.content_blog{
+		padding-top: 50px;
+		width: 90%;
+		margin: 0 auto;
+		}
+
+		
+	.logo a { 
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		}
+
+  	#cssmenu ul li {
+		float: none;
+		display: block;
+		}
+		
+  	#cssmenu ul li a {
+		width: 100%;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		border-bottom: 1px solid #fb998c;
+		text-align: center;
+		}
+		
+  	#cssmenu ul li.last > a,
+  #cssmenu ul li:last-child > a {
+	 	border: 0;
+	 	}
+	  
+  #cssmenu ul li a:after {
+    	display: none;
+  		}
+  
+  #cssmenu ul li a:before {
+    	 display: none;
+ 		 }
+ 
+	.magic_fields{
+		display: block;
+		align: center;
+		margin: 5px;
+		max-width: 600px;
+		max-height: 600px;
+		}
+
+}
+
+

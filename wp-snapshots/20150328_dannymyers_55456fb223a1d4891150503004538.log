@@ -1,0 +1,75 @@
+********************************************************************************
+PACKAGE-LOG: 2015-05-03 00:46:08
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	0.5.18
+WORDPRESS:	4.1.4
+PHP INFO:	5.6.2 | SAPI: apache2handler
+SERVER:		Apache/2.2.29 (Unix) mod_fastcgi/2.4.6 mod_wsgi/3.4 Python/2.7.8 PHP/5.6.2 mod_ssl/2.2.29 OpenSSL/0.9.8zd DAV/2 mod_perl/2.0.8 Perl/v5.20.0 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 5000M (268435456 default) 
+MEMORY STACK: 21MB 
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   PHP (query limit - 100)
+MYSQLDUMP:    Not Supported
+MYSQLTIMEOUT: 5000 
+TABLES: total:20 | filtered:0 | create:20 
+FILTERED: [] 
+SQL CREATED: 20150328_dannymyers_55456fb223a1d4891150503004538_database.sql 
+SQL FILE SIZE: 313.99KB 
+SQL FILE TIME: 2015-05-03 00:46:09 
+SQL RUNTIME: 0.08 sec. 
+
+******************************************************************************** 
+ARCHIVE (ZIP): 
+******************************************************************************** 
+ARCHIVE DIR:  /Applications/MAMP/htdocs/portfolio_website 
+ARCHIVE FILE: 20150328_dannymyers_55456fb223a1d4891150503004538_archive.zip 
+FILTERS: *OFF* 
+DIRS:  not set 
+EXTS:  not set 
+---------------------------------------- 
+COMPRESSING 
+SIZE:	43.55MB 
+STATS:	Dirs 205 | Files 2,029 | Links 0 
+SQL ADDED: 20150328_dannymyers_55456fb223a1d4891150503004538_database.sql 
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 2234
+    [filename] => /Applications/MAMP/htdocs/portfolio_website/wp-snapshots/tmp/20150328_dannymyers_55456fb223a1d4891150503004538_archive.zip
+    [comment] => 
+)
+ 
+COMPRESSION RESULT: '1' 
+COMPRESSED SIZE: 27.16MB 
+ARCHIVE RUNTIME: 5.34 sec. 
+MEMORY STACK: 22MB 
+
+******************************************************************************** 
+MAKE INSTALLER: 
+******************************************************************************** 
+Build Start 
+Build Finished 
+Preping for use 
+Template parsed with new data 
+Complete [/Applications/MAMP/htdocs/portfolio_website/wp-snapshots/tmp/20150328_dannymyers_55456fb223a1d4891150503004538_installer.php] 
+Added to archive 
+
+******************************************************************************** 
+INTEGRITY CHECKS: 
+******************************************************************************** 
+SQL File: 313.99KB 
+Installer File: 316.91KB 
+Archive File: 27.16MB  
+
+********************************************************************************
+RECORD ID:[2]
+TOTAL PROCESS RUNTIME: 5.73 sec.
+PEAK PHP MEMORY USED: 24.5MB
+DONE PROCESSING => 20150328_dannymyers 2015-05-03 00:46:14
+ 
